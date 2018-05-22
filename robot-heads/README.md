@@ -31,6 +31,8 @@ Principles to learn:
 * addressing bottlenecks
 * how lean concepts can be applied to software development teams
 
+This exercise was inspired by another we found online: [Mr. Happy Face](http://www.leansimulations.org/2010/11/mr-happy-face-showing-difference.html).
+
 
 ## Running the Exercise
 
