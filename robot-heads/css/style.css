@@ -1,0 +1,46 @@
+body {
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif
+}
+
+#timer {
+    font-size: 150px;
+}
+
+.robot-model-list {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.robot-model {
+    display: inline-block;
+    margin: 0 25px;
+    font-size: 30px;
+}
+
+#controls {
+    opacity: .1;
+    position: fixed;
+}
+
+#controls:hover {
+    opacity: 1;
+}
+
+#controls button {
+    display: block;
+    width: 80px;
+    padding: 3px;
+    font-size: 14px;
+}
+
+.demand p {
+    color: #aaa;
+    text-decoration: line-through;
+}
+
+.demand p:first-child {
+    color: #000;
+    text-decoration: none;
+}

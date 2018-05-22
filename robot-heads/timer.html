@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Acme Robot Head Co.</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <script src="./js/timer.js"></script>
+</head>
+<body>
+    <div id="controls">
+        <button onclick="setPhase(1)">Phase 1</button>
+        <button onclick="setPhase(2)">Phase 2</button>
+        <button onclick="setPhase(3)">Phase 3</button>
+        <hr>
+        <button onclick="timer.start()">Start</button>
+    </div>
+    
+    <h1>Acme Robot Head Co.</h1>
+    <div id="timer">0:00</div>
+
+    <div id="robot-model-list" class="robot-model-list"></div>
+
+    <script>
+        setPhase(1)
+    </script>
+</body>
+</html>
