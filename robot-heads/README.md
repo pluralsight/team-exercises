@@ -10,8 +10,8 @@ who are divided up into teams to create "robot heads" by cutting and gluing pape
     * 35 sheets of blue paper
     * 25 sheets of green paper
     * 15 sheets of yellow paper
-    * 15 sheets of white paper, pre-cut into 30 half-sheets
     * 10 sheets of red paper
+    * 30 sheets of white paper, pre-cut into 60 half-sheets
     * 4 scissors
     * 2 glue sticks
     * 1 pen
