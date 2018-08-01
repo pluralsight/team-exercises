@@ -39,7 +39,7 @@ This exercise was inspired by another we found online: [Mr. Happy Face](http://w
 
 ### Overview
 
-After diving up into teams and handing out the supplies, the teams will build robot heads in 3 distinct 5-minute phases. Each team member will be given a specific role.
+After dividing up into teams and handing out the supplies, the teams will build robot heads in 3 distinct 5-minute phases. Each team member will be given a specific role.
 
 The provided `timer.html` page displays a timer, images of the required robot heads, and the projected customer demand for heads.
 At the end of each phase, they'll earn money for the number of heads they were able to sell and lose money for wasted materials.
