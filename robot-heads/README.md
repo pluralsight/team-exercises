@@ -139,7 +139,7 @@ We are also introducing yellow heads and triangle-shaped eyes and mouths to give
 Unfortunately, this means that the excess parts from Phase 1 will not be usable this quarter.
 
 In order to improve the system and reduce waste, management has decided that we will move to a Lean methodology.
-To enable a _pull-baed flow_, we will establish a new process:
+To enable a _pull-based flow_, we will establish a new process:
 1. The designer will continue to create specs.
 2. The eye builders will pull a spec (matching their eye shape) from the designer and place eyes on top.
 4. Next, the mouth builder will pull the spec & eyes and add the mouth.
