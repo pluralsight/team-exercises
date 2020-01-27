@@ -95,16 +95,20 @@ const buildDemandList = () => {
     const halfSeconds = timer.totalSeconds * .5
     for (let i = 0; i < numberOfModels; i++) {
         demandList[i] = []
-        demandList[i].push({time: 0, demand: formatDemand(data.end[i])});
+        demandList[i].push({ time: 0, demand: formatDemand(data.end[i]) });
         interpolate(i, 0, halfSeconds, data.end[i], data.mid[i])
-        demandList[i].push({time: halfSeconds, demand: formatDemand(data.mid[i])});
+        demandList[i].push({ time: halfSeconds, demand: formatDemand(data.mid[i]) });
         interpolate(i, halfSeconds, timer.totalSeconds, data.mid[i], data.start[i])
-        demandList[i].push({time: timer.totalSeconds, demand: formatDemand(data.start[i])});
+        demandList[i].push({ time: timer.totalSeconds, demand: formatDemand(data.start[i]) });
     }
 }
 
 const formatDemand = (data) => {
-    return `<p>${data.demand} @ $${data.value}</p>`
+    return `<div>
+        <p><span>$${data.value} <small> each </small></span></p> 
+        <p> x </p> 
+        <p><span>${data.demand} <small> max </small></span></p>
+        </div>`
 }
 
 const interpolate = (i, start, end, from, to) => {
@@ -119,13 +123,13 @@ const interpolate = (i, start, end, from, to) => {
             demand: Math.round(from.demand + demandDelta * step),
             value: Math.round(from.value + valueDelta * step)
         }
-        demandList[i].push({time: start + step * interval, demand: formatDemand(temp)})
+        demandList[i].push({ time: start + step * interval, demand: formatDemand(temp) })
     }
 }
 
 const updateDemand = (remaining) => {
     for (let i = 1; i <= numberOfModels; i++) {
-        const demandToShow = demandList[i-1].filter(x => x.time >= remaining).map(x => x.demand)
+        const demandToShow = demandList[i - 1].filter(x => x.time >= remaining).map(x => x.demand)
         const div = document.getElementById(`model${i}-demand`)
         div.innerHTML = demandToShow.join('')
     }

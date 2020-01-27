@@ -5,23 +5,35 @@ body {
 
 #timer {
     font-size: 150px;
+    width: 100%;
 }
 
 .robot-model-list {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
 }
 
 .robot-model {
     display: inline-block;
-    margin: 0 25px;
+    margin: 0;
+    padding: 10px;
     font-size: 30px;
+    width: 20%;
+}
+
+.robot-model img {
+    width: 100%;
+    max-width: 250px;
 }
 
 #controls {
     opacity: .1;
     position: fixed;
+    top: 40px;
 }
 
 #controls:hover {
@@ -35,12 +47,58 @@ body {
     font-size: 14px;
 }
 
-.demand p {
+.demand div {
     color: #aaa;
     text-decoration: line-through;
+    margin: 0 0 10px 0;
+    display: flex;
+    justify-content: center;
+    line-height: 10px;
 }
 
-.demand p:first-child {
+.demand div:first-child {
     color: #000;
     text-decoration: none;
+    line-height: 30px;
+}
+
+.demand div p {
+    margin: 5px 0;
+}
+
+.demand div p:first-child {
+    text-align: right;
+    width: 50%;
+    display: grid;
+}
+
+.demand div p:nth-child(2) {
+    margin: 0 10px;
+    width: 20%;
+}
+
+.demand div p:nth-child(3) {
+    text-align: left;
+    width: 30%;
+}
+
+.demand div p small {
+    visibility: hidden;
+}
+
+.demand div:first-child p small {
+    visibility: visible;
+    display: block;
+    font-size: 0.6em;
+    color: #444;
+}
+
+@media (max-width:768px) {
+    .robot-model {
+        display: inline-block;
+        margin: 0;
+        padding: 10px;
+        font-size: 20px;
+        width: 20%;
+    }
 }
