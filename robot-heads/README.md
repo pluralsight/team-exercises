@@ -55,7 +55,7 @@ After the third phase, the entire group will be given time to ask questions and 
 
 ### Setup (~10 min)
 
-Start the provided [slide deck](https://docs.google.com/presentation/d/1d-DGIpf_Fes-MLgpDVtC3BKI_lkYrh423OK0Kw9CDoY/edit?usp=sharing) and welcome the participants.
+Start the provided [slide deck](https://docs.google.com/presentation/d/1P8buUYm4OhxJJyUGccTzQJPePjCeOjokgsYSfAfTi3Y/edit?usp=sharing) and welcome the participants.
 Divide the participants into roughly-even teams of no more than 7 people each.
 Have each team gather at their workspace and provide them with their needed supplies (except for the balance sheets which you will hand out later).
 
